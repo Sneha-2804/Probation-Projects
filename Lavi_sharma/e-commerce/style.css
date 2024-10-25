@@ -1,0 +1,273 @@
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan';
+}
+
+/*logo*/
+.logo{
+    height: 75px;
+}
+
+/*body and fonts*/
+body {
+    width: 100%;
+}
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+h2{
+    font-size: 46px;
+    line-height: 64px;
+    color: #222;
+}
+h4{
+    font-size: 20px;
+    color: #222;
+}
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    padding: 40px 0;
+}   
+
+/*heading*/
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+/*navigation bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: #088178;
+}
+
+/*after effect for line below*/
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile{
+    display: none;
+    align-items: center;
+}
+
+#close{
+    display: none;
+}
+/*home page*/
+#slogan{
+    background-image: url(/Probation-Projects-24/Lavi_sharma/e-commerce/pics/hero4.png);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#slogan h4{
+    padding-bottom: 15px;
+}
+#slogan h1{
+    color: #088178;
+}
+#slogan button{
+    background-image: url(/Probation-Projects-24/Lavi_sharma/e-commerce/pics/button.png);
+    background-color: transparent;
+    color: #088178;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+/* feature boxes*/
+#features{
+    display: flex;
+    align-items: centre;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#features .f-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+/*hover for feature boxes*/
+#features .f-box:hover{
+    box-shadow: 10px 10px 54px rgba(70,62,221,0.17);
+}
+
+#features .f-box img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+#features .f-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+}
+#features .f-box:nth-child(2) h6{
+    background-color: #cdebbc;
+}
+#features .f-box:nth-child(3) h6{
+    background-color: #d1e8f2;
+}
+#features .f-box:nth-child(4) h6{
+    background-color: #cdd4f8;
+}
+#features .f-box:nth-child(5) h6{
+    background-color: #f6dbf6;
+}
+#features .f-box:nth-child(6) h6{
+    background-color: #fff2e5;
+}
+/**/
+/**/
+/**/
+/**/
+/**/
+@media (max-width:897px) {
+    .section-p1 {
+        padding: 40px 40px;
+    }
+        #navbar {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            position: fixed;
+            top: 0;
+            right: -300px;
+            height: 100vh;
+            width: 300px;
+            background-color: #e3e6f3;
+            box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+            padding: 80px 0 0 10px;
+            transition: 0.3s;
+        }
+
+        #navbar.active{
+            right: 0px;
+        }
+
+        #navbar li {
+            margin-bottom: 25px;
+        }
+
+        #mobile{
+            display: flex;
+            align-items: center;
+        }
+
+        #mobile i{
+            color: #1a1a1a;
+            font-size: 24px;
+            padding-left: 20px;
+        }
+ 
+        #close{
+            display: initial;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            color: #222;
+            font-size: 24px;
+        }
+        #bag{
+            display: none;
+        }
+
+        #slogan {
+            height: 90vh;
+            padding: 0 80px; 
+            background-position: top 30% right 30%;
+        }
+
+        #features {
+            justify-content: center;
+        }
+
+        #features .f-box {
+            margin: 15px 15px;
+        }
+}
+/*for small screen devices*/
+@media (max-width: 477px) {
+    #header {
+        padding: 8px 10px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    h1{
+        font-size: 38px;
+    }
+    #slogan {
+        height: 0 20px;
+        padding: 0 17px;
+        background-position: 61%;
+    }
+}
