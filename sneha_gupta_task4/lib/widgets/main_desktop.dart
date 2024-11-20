@@ -46,8 +46,8 @@ class MainDesktop extends StatelessWidget {
             ],
           ),
           Image.asset(
-            "images/image_avatar.png",
-            width: screenWidth / 3,
+            "images/my_flutter_avatar.png",
+            width: screenWidth / 2,
           ),
         ],
       ),

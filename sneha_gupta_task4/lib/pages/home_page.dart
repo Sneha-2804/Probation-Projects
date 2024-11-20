@@ -9,6 +9,7 @@ import 'package:my_portfolio/widgets/header_mobile.dart';
 import 'package:my_portfolio/widgets/header_desktop.dart';
 import 'package:my_portfolio/widgets/main_desktop.dart';
 import 'package:my_portfolio/widgets/main_mobile.dart';
+import 'package:my_portfolio/widgets/skill_desktop.dart';
 // import 'package:my_portfolio/widgets/site_logo.dart';
 
 class HomePage extends StatefulWidget {
@@ -48,10 +49,29 @@ class _HomePageState extends State<HomePage> {
               else
                 MainMobile(),
               Container(
-                height: 500,
-                width: double.maxFinite,
-                color: Colors.blueGrey,
+                // key: navbarKeys[1],
+                width: screenWidth,
+                padding: const EdgeInsets.fromLTRB(25, 20, 25, 60),
+                color: CustomColor.bgLight1,
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    // title
+                    const Text(
+                      "What I can do",
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                        color: CustomColor.whitePrimary,
+                      ),
+                    ),
+                    const SizedBox(height: 50),
+
+                    SkillDesktop()
+                  ],
+                ),
               ),
+              const SizedBox(height: 30),
               Container(
                 height: 500,
                 width: double.maxFinite,

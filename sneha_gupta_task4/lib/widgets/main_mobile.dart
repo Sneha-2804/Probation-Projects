@@ -31,8 +31,8 @@ class MainMobile extends StatelessWidget {
             },
             blendMode: BlendMode.srcATop,
             child: Image.asset(
-              "images/image_avatar.png",
-              width: screenWidth / 1.5,
+              "images/my_flutter_avatar.png",
+              width: screenWidth,
             ),
           ),
           SizedBox(
