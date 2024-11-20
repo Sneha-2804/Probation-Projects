@@ -2,17 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:my_portfolio/constants/colors.dart';
 import 'package:my_portfolio/constants/size.dart';
 import 'package:my_portfolio/widgets/contact_section.dart';
-// import 'package:my_portfolio/constants/nav_items.dart';
 import 'package:my_portfolio/widgets/drawer_mobile.dart';
-// import 'package:my_portfolio/styles/style.dart';
+import 'package:my_portfolio/widgets/footer.dart';
 import 'package:my_portfolio/widgets/header_mobile.dart';
-// import 'package:my_portfolio/constants/nav_items.dart';
 import 'package:my_portfolio/widgets/header_desktop.dart';
 import 'package:my_portfolio/widgets/main_desktop.dart';
 import 'package:my_portfolio/widgets/main_mobile.dart';
 import 'package:my_portfolio/widgets/skill_desktop.dart';
 import 'package:my_portfolio/widgets/skill_mobile.dart';
-// import 'package:my_portfolio/widgets/site_logo.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -27,7 +24,6 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
     final screenWidth = screenSize.width;
-    final screenHeight = screenSize.height;
     return LayoutBuilder(builder: (context, constraints) {
       return Scaffold(
         key: scaffoldKey,
@@ -89,6 +85,7 @@ class _HomePageState extends State<HomePage> {
             SizedBox(height: 20),
             ContactSection(),
             SizedBox(height: 20),
+            Footer(),
           ],
         ),
       );
