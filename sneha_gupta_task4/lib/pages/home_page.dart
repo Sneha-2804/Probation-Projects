@@ -8,6 +8,7 @@ import '../widgets/header_mobile.dart';
 import '../widgets/header_desktop.dart';
 import '../widgets/main_desktop.dart';
 import '../widgets/main_mobile.dart';
+import '../widgets/projects_section.dart';
 import '../widgets/skill_desktop.dart';
 import '../widgets/skill_mobile.dart';
 
@@ -85,22 +86,14 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),
               ),
-              Container(
+              const SizedBox(height: 30),
+
+              // PROJECTS
+              ProjectsSection(
                 key: navbarKeys[2],
-                width: screenWidth,
-                padding: const EdgeInsets.fromLTRB(25, 20, 25, 60),
-                color: CustomColor.scaffoldBg,
-                child: Center(
-                  child: Text(
-                    "Projects",
-                    style: TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                      color: CustomColor.whitePrimary,
-                    ),
-                  ),
-                ),
               ),
+
+              const SizedBox(height: 30),
               ContactSection(
                 key: navbarKeys[3],
               ),
