@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/constants/colors.dart';
-import 'package:my_portfolio/constants/size.dart';
-import 'package:my_portfolio/widgets/contact_section.dart';
-import 'package:my_portfolio/widgets/drawer_mobile.dart';
-import 'package:my_portfolio/widgets/footer.dart';
-import 'package:my_portfolio/widgets/header_mobile.dart';
-import 'package:my_portfolio/widgets/header_desktop.dart';
-import 'package:my_portfolio/widgets/main_desktop.dart';
-import 'package:my_portfolio/widgets/main_mobile.dart';
-import 'package:my_portfolio/widgets/skill_desktop.dart';
-import 'package:my_portfolio/widgets/skill_mobile.dart';
+import '../constants/colors.dart';
+import '../constants/size.dart';
+import '../widgets/contact_section.dart';
+import '../widgets/drawer_mobile.dart';
+import '../widgets/footer.dart';
+import '../widgets/header_mobile.dart';
+import '../widgets/header_desktop.dart';
+import '../widgets/main_desktop.dart';
+import '../widgets/main_mobile.dart';
+import '../widgets/skill_desktop.dart';
+import '../widgets/skill_mobile.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
