@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Portfolio Page',
       home: HomePage(),
     );
   }
