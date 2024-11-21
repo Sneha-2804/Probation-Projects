@@ -18,6 +18,7 @@ class MainDesktop extends StatelessWidget {
         children: [
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
                 "Hi! \nI'm Sneha Gupta\nA Flutter Developer",
@@ -26,6 +27,16 @@ class MainDesktop extends StatelessWidget {
                   height: 1.5,
                   fontWeight: FontWeight.bold,
                   color: CustomColor.whitePrimary,
+                ),
+              ),
+              SizedBox(height: 10),
+              Text(
+                "A Flutter developer builds and maintains\napplications for multiple platforms,\nincluding iOS and Android,\nusing Google's Flutter toolkit",
+                style: TextStyle(
+                  fontSize: 12,
+                  height: 1.5,
+                  fontWeight: FontWeight.bold,
+                  color: CustomColor.whiteSecondary,
                 ),
               ),
               SizedBox(
@@ -46,7 +57,7 @@ class MainDesktop extends StatelessWidget {
             ],
           ),
           Image.asset(
-            "images/my_flutter_avatar.png",
+            "images/portfolio.webp",
             width: screenWidth / 2,
           ),
         ],

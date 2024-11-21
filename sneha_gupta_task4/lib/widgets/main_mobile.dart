@@ -31,7 +31,7 @@ class MainMobile extends StatelessWidget {
             },
             blendMode: BlendMode.srcATop,
             child: Image.asset(
-              "images/my_flutter_avatar.png",
+              "images/portfolio.webp",
               width: screenWidth,
             ),
           ),
@@ -45,6 +45,15 @@ class MainMobile extends StatelessWidget {
               height: 1.5,
               fontWeight: FontWeight.bold,
               color: CustomColor.whitePrimary,
+            ),
+          ),
+          Text(
+            "A Flutter developer builds and maintains applications for multiple platforms, including iOS and Android, using Google's Flutter toolkit",
+            style: TextStyle(
+              fontSize: 12,
+              height: 1.5,
+              fontWeight: FontWeight.bold,
+              color: CustomColor.whiteSecondary,
             ),
           ),
           SizedBox(
