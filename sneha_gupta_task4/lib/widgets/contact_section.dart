@@ -17,7 +17,7 @@ class ContactSection extends StatelessWidget {
         children: [
           // title
           const Text(
-            "Get in touch",
+            "Contact Me",
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 24,
@@ -64,7 +64,7 @@ class ContactSection extends StatelessWidget {
               child: ElevatedButton(
                 onPressed: () {},
                 child: const Text(
-                  "Get in touch",
+                  "Contact Me",
                   style: TextStyle(
                     color: CustomColor.whitePrimary,
                   ),

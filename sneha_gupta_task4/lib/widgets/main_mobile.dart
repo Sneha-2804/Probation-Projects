@@ -64,7 +64,7 @@ class MainMobile extends StatelessWidget {
             child: ElevatedButton(
               onPressed: () {},
               child: Text(
-                "Get in Touch",
+                "Contact Me",
                 style: TextStyle(
                   color: CustomColor.whitePrimary,
                 ),

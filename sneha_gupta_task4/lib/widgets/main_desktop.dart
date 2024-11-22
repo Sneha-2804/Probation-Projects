@@ -16,6 +16,10 @@ class MainDesktop extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
+          Image.asset(
+            "images/portfolio.webp",
+            width: screenWidth / 2,
+          ),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -47,7 +51,7 @@ class MainDesktop extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: () {},
                   child: Text(
-                    "Get in Touch",
+                    "Contact Me",
                     style: TextStyle(
                       color: CustomColor.whitePrimary,
                     ),
@@ -55,10 +59,6 @@ class MainDesktop extends StatelessWidget {
                 ),
               ),
             ],
-          ),
-          Image.asset(
-            "images/portfolio.webp",
-            width: screenWidth / 2,
           ),
         ],
       ),
