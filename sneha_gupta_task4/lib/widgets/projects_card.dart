@@ -79,7 +79,7 @@ class ProjectCardWidget extends StatelessWidget {
                       js.context.callMethod("open", [project.webLink]);
                     },
                     child: Image.asset(
-                      "images/web_icon.png",
+                      "images/github.png",
                       width: 17,
                     ),
                   ),

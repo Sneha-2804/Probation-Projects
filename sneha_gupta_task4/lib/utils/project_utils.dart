@@ -18,7 +18,7 @@ List<ProjectUtils> workProjectUtils = [
     title: 'Simon Says Game',
     subtitle:
         'This is an English learning app for students to learn English through various methods.',
-    webLink: 'https://www.mathsisfun.com/games/simon-says.html',
+    webLink: 'https://github.com/Sneha-2804/Simon-Says-Game',
   ),
   ProjectUtils(
     image: 'images/projects/photo2.png',
@@ -32,13 +32,13 @@ List<ProjectUtils> workProjectUtils = [
     title: 'Spotify Clone',
     subtitle:
         'This is an Advertisement Management System to buy, sell, and manage advertisement.',
-    webLink: 'https://open.spotify.com/',
+    webLink: 'https://github.com/Sneha-2804/Spotify-Clone',
   ),
   ProjectUtils(
     image: 'images/projects/photo4.png',
     title: 'Pet Adopt',
     subtitle:
         'This is an English learning app for students to learn English through various methods.',
-    webLink: 'https://thepetnest.com/adopt-a-pet',
+    webLink: 'https://github.com/Sneha-2804/PetDog',
   ),
 ];
